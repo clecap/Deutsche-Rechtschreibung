@@ -1,0 +1,973 @@
+# this is the affix file of the de_DE_1901_Fraktur Hunspell dictionary
+# derived from the de_DE_1901 dictionary and compatible with Fraktur typefaces
+#
+# Version: 2016-03-26
+#
+# Copyright (C) 1998-2009 Björn Jacke <bjoern@j3e.de>
+# Copyright (C) 2016 Rüdiger Brünner
+#
+# License: GPLv2, GPLv3 or OASIS distribution license agreement
+# There should be a copy of both of this licenses included
+# with every distribution of this dictionary. Modified
+# versions using the GPL may only include the GPL
+
+SET UTF-8
+TRY esijanrtolcdugmphbyfvkwqxzäüößſáéêàâñESIJANRTOLCDUGMPHBYFVKWQXZÄÜÖÉ-.'
+
+# un-Vorsilbe
+PFX U Y 1
+PFX U   0     un       .
+
+# Nicht abtrennbares ver-Suffix für Zeitwörter
+PFX V Y 1
+PFX V   0     ver      .
+
+# -in, -innen zur Bildung weiblicher Formen für alle Hauptwörter und
+# Anhängen von -nen für Hauptwörter auf -in
+SFX F Y 17
+SFX F   0     nen        in
+SFX F   e     in         e
+SFX F   e     innen      e
+SFX F   0     in         [^i]n
+SFX F   0     innen      [^i]n
+SFX F   0     in         [^enr]
+SFX F   0     innen      [^enr]
+SFX F   0     in         [^e]r
+SFX F   0     innen      [^e]r
+SFX F   0     in         [^r]er
+SFX F   0     innen      [^r]er
+SFX F   0     in         [^e]rer
+SFX F   0     innen      [^e]rer
+SFX F   0     in         ierer
+SFX F   0     innen      ierer
+SFX F   er    in         [^i]erer
+SFX F   er    innen      [^i]erer
+#SFX F   en    innen        en
+#SFX F   en    Innen        en
+
+
+SFX L N 12
+SFX L   0       tlich      n
+SFX L   0       tliche     n
+SFX L   0       tlicher    n
+SFX L   0       tliches    n
+SFX L   0       tlichem    n
+SFX L   0       tlichen    n
+SFX L   0       lich       [^n]
+SFX L   0       liche      [^n]
+SFX L   0       licher     [^n]
+SFX L   0       liches     [^n]
+SFX L   0       lichem     [^n]
+SFX L   0       lichen     [^n]
+
+
+#SFX H N 2
+#SFX H   0       heit       .
+#SFX H   0       heiten     .
+
+
+#SFX K N 2
+#SFX K   0       keit       .
+#SFX K   0       keiten     .
+
+
+# Verkleinerungsformen mit -chen und lein:
+SFX M N 22
+SFX M   0       chen       [^sſe]
+SFX M   0       chens      [^sſe]
+SFX M   aß      äßchen     aß
+SFX M   aß      äßchens    aß
+SFX M   oß      ößchen     oß
+SFX M   oß      ößchens    oß
+SFX M   uß      üßchen     uß
+SFX M   uß      üßchens    uß
+SFX M   e       chen       e
+SFX M   e       chens      e
+SFX M   0       lein       [^sſle]
+SFX M   0       leins      [^sſle]
+SFX M   aß      äßlein     aß
+SFX M   aß      äßleins    aß
+SFX M   oß      ößlein     oß
+SFX M   oß      ößleins    oß
+SFX M   uß      üßlein     uß
+SFX M   uß      üßleins    uß
+SFX M   l       lein       l
+SFX M   l       leins      l
+SFX M   e       lein       e
+SFX M   e       leins      e
+
+
+# Beugung von Eigenschaftswörtern
+SFX A Y 51
+SFX A   0       r          e
+SFX A   0       n          e
+SFX A   0       m          e
+SFX A   0       s          e
+SFX A   s       ſe         s
+SFX A   s       ſer        s
+SFX A   s       ſen        s
+SFX A   s       ſem        s
+SFX A   s       ſes        s
+SFX A   0       e          [^elrs]
+SFX A   0       er         [^elrs]
+SFX A   0       en         [^elrs]
+SFX A   0       em         [^elrs]
+SFX A   0       es         [^elrs]
+SFX A   0       e          [^e][rl]
+SFX A   0       er         [^e][rl]
+SFX A   0       en         [^e][rl]
+SFX A   0       em         [^e][rl]
+SFX A   0       es         [^e][rl]
+SFX A   0       e          [^u]er
+SFX A   0       er         [^u]er
+SFX A   0       en         [^u]er
+SFX A   0       em         [^u]er
+SFX A   0       es         [^u]er
+SFX A   er      re         uer
+SFX A   er      rer        uer
+SFX A   er      ren        uer
+SFX A   er      rem        uer
+SFX A   er      res        uer
+SFX A   0       e          [eil]el
+SFX A   0       er         [eil]el
+SFX A   0       en         [eil]el
+SFX A   0       em         [eil]el
+SFX A   0       es         [eil]el
+SFX A   el      le         [^eil]el
+SFX A   el      ler        [^eil]el
+SFX A   el      len        [^eil]el
+SFX A   el      lem        [^eil]el
+SFX A   el      les        [^eil]el
+SFX A   lig     elig       [^aeiouhlräüö]lig
+SFX A   lig     elige      [^aeiouhlräüö]lig
+SFX A   lig     eliger     [^aeiouhlräüö]lig
+SFX A   lig     eligen     [^aeiouhlräüö]lig
+SFX A   lig     eligem     [^aeiouhlräüö]lig
+SFX A   lig     eliges     [^aeiouhlräüö]lig
+SFX A   erig    rig        [^hi]erig
+SFX A   erig    rige       [^hi]erig
+SFX A   erig    riger      [^hi]erig
+SFX A   erig    rigen      [^hi]erig
+SFX A   erig    rigem      [^hi]erig
+SFX A   erig    riges      [^hi]erig
+
+# Spezialfall für ß nach kurzem Selbslaut
+SFX a Y 5
+SFX a   ß       ſſe        ß
+SFX a   ß       ſſem       ß
+SFX a   ß       ſſen       ß
+SFX a   ß       ſſer       ß
+SFX a   ß       ſſes       ß
+
+# Steigerungsformen von Eigenschaftswörtern:
+SFX C Y 114                                                    
+SFX C   0       ere        [^elr]                                # neu > neuere 
+SFX C   0       erer       [^elr]  
+SFX C   0       eren       [^elr]  
+SFX C   0       erem       [^elr]  
+SFX C   0       eres       [^elr]  
+SFX C   0       re         e                                     # prüde > prüdere 
+SFX C   0       rer        e     
+SFX C   0       ren        e     
+SFX C   0       rem        e     
+SFX C   0       res        e     
+SFX C   0       ere        [^e][lr]                              # schmal > schmale 
+SFX C   0       erer       [^e][lr]       
+SFX C   0       eren       [^e][lr]       
+SFX C   0       erem       [^e][lr]       
+SFX C   0       eres       [^e][lr]       
+SFX C   el      lere       el                                    # eitel > eitlere
+SFX C   el      lerer      el
+SFX C   el      leren      el
+SFX C   el      lerem      el
+SFX C   el      leres      el
+SFX C   er      rere       uer                                   # teuer > teurere 
+SFX C   er      rerer      uer   
+SFX C   er      reren      uer   
+SFX C   er      rerem      uer   
+SFX C   er      reres      uer   
+SFX C   0       ere        [^u]er                                # schwer > schwerere 
+SFX C   0       erer       [^u]er        
+SFX C   0       eren       [^u]er        
+SFX C   0       erem       [^u]er        
+SFX C   0       eres       [^u]er        
+SFX C   lig     eligere    [^aeiouhlräüö]lig                     # adlig > adeligere 
+SFX C   lig     eligerer   [^aeiouhlräüö]lig 
+SFX C   lig     eligeren   [^aeiouhlräüö]lig 
+SFX C   lig     eligerem   [^aeiouhlräüö]lig 
+SFX C   lig     eligeres   [^aeiouhlräüö]lig 
+SFX C   erig    rigere     [^hi]erig                             # zitterig > zittrigere 
+SFX C   erig    rigerer    [^hi]erig   
+SFX C   erig    rigeren    [^hi]erig   
+SFX C   erig    rigerem    [^hi]erig   
+SFX C   erig    rigeres    [^hi]erig
+SFX C   0       eſte       [kuxz]                              # neu > neueste 
+SFX C   0       eſter      [kuxz]     
+SFX C   0       eſten      [kuxz]
+SFX C   0       eſtem      [kuxz]                              # lax > laxestem 
+SFX C   0       eſtes      [kuxz]                              # spitz > spitzestes 
+SFX C   s       ſeſte      s                              # mies > mieseste 
+SFX C   s       ſeſter     s
+SFX C   s       ſeſten     s
+SFX C   s       ſeſtem     s
+SFX C   s       ſeſtes     s
+SFX C   0       eſte       ss     
+SFX C   0       eſter      ss     
+SFX C   0       eſten      ss     
+SFX C   0       eſtem      ss     
+SFX C   0       eſtes      ss     
+SFX C   0       ſt         et
+SFX C   0       ſte        et                                    # geeignet > geeignetste 
+SFX C   0       ſter       et     
+SFX C   0       ſten       et     
+SFX C   0       ſtem       et     
+SFX C   0       ſtes       et     
+SFX C   0       ſt         igt
+SFX C   0       ſte        igt
+SFX C   0       ſter       igt
+SFX C   0       ſten       igt
+SFX C   0       ſtem       igt
+SFX C   0       ſtes       igt
+SFX C   0       eſt        [^i]gt
+SFX C   0       eſte       [^i]gt
+SFX C   0       eſter      [^i]gt
+SFX C   0       eſten      [^i]gt
+SFX C   0       eſtem      [^i]gt
+SFX C   0       eſtes      [^i]gt
+SFX C   0       eſt        [^eg]t
+SFX C   0       eſte       [^eg]t
+SFX C   0       eſter      [^eg]t
+SFX C   0       eſten      [^eg]t
+SFX C   0       eſtem      [^eg]t
+SFX C   0       eſtes      [^eg]t
+SFX C   0       ſt         [^dkßstxz]                            # teuer > teuerst 
+SFX C   0       ſte        [^dkßstxz]                            # teuer > teuerste 
+SFX C   0       ſter       [^dkßstxz]                            # dick > dickster 
+SFX C   0       ſten       [^dkßstxz]                            # lahm > lahmsten 
+SFX C   0       ſtem       [^dkßstxz]                            # teuer > teuerstem 
+SFX C   0       ſtes       [^dkßstxz]                            # teuer > teuerstes 
+SFX C   0       ſt         nd
+SFX C   0       ſte        nd                                    # wohlhabend > wohlhabendste 
+SFX C   0       ſter       nd     
+SFX C   0       ſten       nd     
+SFX C   0       ſtem       nd     
+SFX C   0       ſtes       nd     
+SFX C   0       eſt        [^n]d
+SFX C   0       eſte       [^n]d                                 # wild > wildeste 
+SFX C   0       eſter      [^n]d  
+SFX C   0       eſten      [^n]d  
+SFX C   0       eſtem      [^n]d  
+SFX C   0       eſtes      [^n]d  
+SFX C   0       eſte       ß
+SFX C   0       eſter      ß
+SFX C   0       eſten      ß
+SFX C   0       eſtem      ß
+SFX C   0       eſtes      ß
+SFX C   lig     eligſt     [^aeiouhlräüö]lig
+SFX C   lig     eligſte    [^aeiouhlräüö]lig                     # adlig > adeligste 
+SFX C   lig     eligſter   [^aeiouhlräüö]lig 
+SFX C   lig     eligſten   [^aeiouhlräüö]lig 
+SFX C   lig     eligſtem   [^aeiouhlräüö]lig 
+SFX C   lig     eligſtes   [^aeiouhlräüö]lig 
+SFX C   erig    rigſt      [^hi]erig
+SFX C   erig    rigſte     [^hi]erig                             # zitterig > zittrig 
+SFX C   erig    rigſter    [^hi]erig   
+SFX C   erig    rigſten    [^hi]erig   
+SFX C   erig    rigſtem    [^hi]erig   
+SFX C   erig    rigſtes    [^hi]erig   
+
+
+# Sonderfall für ß nach kurzem Selbstlaut
+SFX c Y 10
+SFX c   ß       ſſere      ß                          # blaß > blassere
+SFX c   ß       ſſerer     ß
+SFX c   ß       ſſeren     ß
+SFX c   ß       ſſerem     ß
+SFX c   ß       ſſeres     ß
+SFX c   ß       ſſeste     ß
+SFX c   ß       ſſeſter    ß
+SFX c   ß       ſſeſten    ß
+SFX c   ß       ſſeſtem    ß
+SFX c   ß       ſſeſtes    ß
+
+# Mehrzahlform u. ä. mit -e
+SFX E Y 2
+SFX E   s       ſe        s                          # Gas > Gase
+SFX E   0       e         [^s]                       # Kredit > Kredite
+
+
+# Mehrzahlform mit -n
+SFX N Y 1
+SFX N   0       n          .
+
+
+# Mehrzahlform mit -en
+SFX P Y 2
+SFX P   s       ſen        s
+SFX P   0       en         [^s] 
+
+
+# unregelmäßige Mehrzahlformen mit Umlautbildung
+SFX p Y 76
+SFX p   acht    ächte     acht                          # Macht > Mächte
+SFX p   acht    ächten    acht
+SFX p   ucht    üchte     ucht
+SFX p   ucht    üchten    ucht
+SFX p   auf     äufe      auf
+SFX p   auf     äufen     auf
+SFX p   aus     äuſe      aus
+SFX p   aus     äuſen     aus
+SFX p   aut     äute      aut
+SFX p   aut     äuten     aut
+SFX p   arkt    ärkte     [mM]arkt
+SFX p   arkt    ärkten    [mM]arkt
+SFX p   and     ände      and
+SFX p   and     änden     and
+SFX p   und     ünde      und
+SFX p   und     ünden     und
+SFX p   ang     änge      ang
+SFX p   ang     ängen     ang
+SFX p   ung     ünge      ung
+SFX p   ung     üngen     ung
+SFX p   ank     änke      ank
+SFX p   ank     änken     ank
+SFX p   anz     änze      anz
+SFX p   anz     änzen     anz
+SFX p   aft     äfte      aft
+SFX p   aft     äften     aft
+SFX p   ahl     ähle      ahl
+SFX p   ahl     ählen     ahl
+SFX p   aht     ähte      aht
+SFX p   aht     ähten     aht
+SFX p   amm     ämme      amm
+SFX p   amm     ämmen     amm
+SFX p   ampf    ämpfe     ampf
+SFX p   ampf    ämpfen    ampf
+SFX p   umpf    ümpfe     umpf
+SFX p   umpf    ümpfen    umpf
+SFX p   arm     ärme      arm
+SFX p   arm     ärmen     arm
+SFX p   urm     ürme      urm
+SFX p   urm     ürmen     urm
+SFX p   uß      üße       uß
+SFX p   uß      üßen      uß
+SFX p   oß      öße       oß
+SFX p   oß      ößen      oß
+SFX p   aſt     äſte      aſt
+SFX p   aſt     äſten     aſt
+SFX p   atz     ätze      atz
+SFX p   atz     ätzen     atz
+SFX p   aum     äume      aum
+SFX p   aum     äumen     aum
+SFX p   um      en        [äbeilrsſtu]um                    Kriterium -> Kriterien
+SFX p   um      a         [kmv]um                          Narkotikum -> Narkotika
+SFX p   ock     öcke      ock
+SFX p   ock     öcken     ock
+SFX p   of      öfe       of
+SFX p   of      öfen      of
+SFX p   ohn     öhne      ohn
+SFX p   ohn     öhnen     ohn
+SFX p   on      öne       on
+SFX p   on      önen      on
+SFX p   opf     öpfe      opf
+SFX p   opf     öpfen     opf
+SFX p   orb     örbe      orb
+SFX p   orb     örben     orb
+SFX p   ag      äge       ag
+SFX p   ag      ägen      ag
+SFX p   ug      üge       ug
+SFX p   ug      ügen      ug
+SFX p   auch    äuche     [a]uch
+SPX p   auch    äuchen    [a]uch
+SFX p   uch     üche      [^a]uch
+SPX p   uch     üchen     [^a]uch
+SFX p   all     älle      all
+SFX p   all     ällen     all
+SFX p   an      äne       an
+SFX p   an      änen      an
+
+
+# Mehrzahlform mit -er
+SFX R Y 5
+SFX R   0       er         [^es]
+SFX R   0       ern        [^es]
+SFX R   s       ſer        s
+SFX R   s       ſern       s
+SFX R   0       r          e
+
+
+# Mehrzahlform mit -er unter Umlautbildung
+SFX r Y 50
+SFX r   ab      äber      ab
+SFX r   ab      äbern     ab
+SFX r   ach     ächer     ach                    # Dach > Dächer
+SFX r   ach     ächern    ach
+SFX r   ad      äder      ad
+SFX r   ad      ädern     ad
+SFX r   al      äler      al
+SFX r   al      älern     al
+SFX r   ald     älder     ald
+SFX r   ald     äldern    ald
+SFX r   amt     ämter     amt
+SFX r   amt     ämtern    amt
+SFX r   and     änder     and
+SFX r   and     ändern    and
+SFX r   ann     änner     ann
+SFX r   ann     ännern    ann
+SFX r   as      äſer      as
+SFX r   as      äſern     as
+SFX r   att     ätter     att
+SFX r   att     ättern    att
+SFX r   auch    äucher    auch
+SFX r   auch    äuchern   auch
+SFX r   aus     äuſer     aus
+SFX r   aus     äuſern    aus
+SFX r   aut     äuter     aut
+SFX r   aut     äutern    aut
+SFX r   och     öcher     och
+SFX r   och     öchern    och
+SFX r   olk     ölker     olk
+SFX r   olk     ölkern    olk
+SFX r   orf     örfer     orf
+SFX r   orf     örfern    orf
+SFX r   orn     örner     orn
+SFX r   orn     örnern    orn
+SFX r   ort     örter     ort
+SFX r   ort     örtern    ort
+SFX r   oß      öſſer     oß
+SFX r   oß      öſſern    oß
+SFX r   ott     ötter     ott
+SFX r   ott     öttern    ott
+SFX r   uch     ücher     [^a]uch
+SFX r   uch     üchern    [^a]uch
+SFX r   uhn     ühner     uhn
+SFX r   uhn     ühnern    uhn
+SFX r   um      ümer      um
+SFX r   um      ümern     um
+SFX r   urm     ürmer     urm
+SFX r   urm     ürmern    urm
+SFX r   ut      üter      ut
+SFX r   ut      ütern     ut
+
+
+# Mehrzahlform u. ä. mit -s
+SFX S Y 3 
+SFX S   0       s          [^ßſs]                         # Auto > Autos
+SFX S   0       ſes        s
+SFX S   ß       ſſes       ß                              # Fluß > Flusses
+
+
+# Mehrzahlform mit -e bei -s am Ende
+SFX q Y 2
+SFX q   s       ſſe       s                              # Bus > Busse
+SFX q   s       ſſen      s
+
+
+# Mehrzahlformen, bei denen eine s-Verdoppelung erfolgt
+SFX Q Y 8 
+SFX Q   s       ſſe         s                                     # Geheimnis > Geheimnisse 
+SFX Q   s       ſſen        s                                     # Geheimnis > Geheimnissen 
+SFX Q   aß      äſſe       aß
+SFX Q   aß      äſſen      aß
+SFX Q   uß      üſſe       uß
+SFX Q   uß      üſſen      uß
+SFX Q   ß       ſſe        [^au]ß                                     # Prozeß > Prozesse 
+SFX Q   ß       ſſen       [^au]ß                                     # Prozeß > Prozessen
+
+
+# Genitiv mit -es, häufige Zweitform! 
+SFX T Y 2
+SFX T   s       ſes        s                            # Haus > Hauses
+SFX T   0       es         [^s]                         # Mut > Mutes
+
+
+# Endung mit -ung
+SFX J Y 12
+SFX J   n       ung        [bgkpßsſz]eln
+SFX J   n       ungen      [bgkpßsſz]eln
+SFX J   eln     lung       eln                           # Handeln > Handlung
+SFX J   n       ung        ern
+SFX J   en      ung        en
+SFX J   eln     lungen     eln
+SFX J   n       ungen      ern
+SFX J   en      ungen      en
+SFX J   0       ung        [^n]
+SFX J   0       ungen      [^n]
+SFX J   el      lung       el
+SFX J   el      lungen     el
+
+
+# Eigenschaftswörter mit -bar aus Zeitwörtern
+SFX B N 24                                                       # -bar  (verb -> adj.): 
+SFX B   n       bar        e[lr]n                                # wundern > wunderbar 
+SFX B   n       bare       e[lr]n        
+SFX B   n       baren      e[lr]n        
+SFX B   n       barer      e[lr]n        
+SFX B   n       bares      e[lr]n        
+SFX B   n       barem      e[lr]n        
+SFX B   en      bar        [^sſ]en                                    # halten > haltbar 
+SFX B   en      bare       [^sſ]en     
+SFX B   en      baren      [^sſ]en     
+SFX B   en      barer      [^sſ]en     
+SFX B   en      bares      [^sſ]en     
+SFX B   en      barem      [^sſ]en     
+SFX B   en      bar        [^sſ]ſen                              # lesen > lesbar 
+SFX B   en      bare       [^sſ]ſen     
+SFX B   en      baren      [^sſ]ſen     
+SFX B   en      barer      [^sſ]ſen     
+SFX B   en      bares      [^sſ]ſen     
+SFX B   en      barem      [^sſ]ſen     
+SFX B   ſſen    ßbar       ſſen                                    # essen > eßbar 
+SFX B   ſſen    ßbare      ſſen     
+SFX B   ſſen    ßbaren     ſſen     
+SFX B   ſſen    ßbarer     ſſen     
+SFX B   ſſen    ßbares     ſſen     
+SFX B   ſſen    ßbarem     ſſen     
+
+
+# Bildung der Verlaufsform
+SFX D Y 6
+SFX D   0       d          n                                # sinken > sinkend
+SFX D   0       de         n
+SFX D   0       den        n
+SFX D   0       der        n
+SFX D   0       des        n
+SFX D   0       dem        n
+
+
+
+# Du-Befehlsform
+SFX W Y 10
+SFX W   en      0          [^imnsſ]en                              # reimen > reim 
+SFX W   ſen     s          [^s]ſen
+SFX W   ſſen    ß          ſſen
+SFX W   en      0          eien                                  # schreien > schrei 
+SFX W   en      0          [^bght][mn]en                         # rennen > renn 
+SFX W   en      0          [^c]hnen                              # dehnen        > dehn 
+SFX W   n       0          eln                                   # lächeln > lächel 
+SFX W   n       0          ern                                   # nähern > näher 
+SFX W   ſt      0          ſt                                    # trittst > tritt 
+SFX W   t       0          [^sſ]t                                # nimmt > nimm 
+
+# 
+# Gegenwartsform: 
+# 
+# Formen für ich, ihr sind von denen für du,er/sie/es getrennt. 
+# Viele (starke) Zeitwörter können nur die 1. Person aus der Grundform bilden. 
+#       tragen/I > trage, tragt 
+# 
+# Auch ist X manchmal nützlich für Vergangenheitsform des Konjunktiv: 
+#       abnahmen/X > abnahmst, abnahmt 
+# 
+# Für die Gegenwartsform von schwachen Zeitwörtern gehen, I und X zusammen.
+# 
+SFX I Y 22
+SFX I   n       0          en                                    # kommen > komme 
+SFX I   eln     le         [^sſ]eln                           # lächeln > lächle #nnn 
+SFX I   eln     le         [^sſ]ſeln                           # lächeln > lächle #nnn 
+SFX I   ſſeln   ßle        ſſeln
+SFX I   n       e          eln                                   # auch: lächeln > lächele 
+SFX I   ern     re         [^sſ]ern                                   # wandern > wandre 
+SFX I   ern     re         [^sſ]sern                                   # wandern > wandre 
+SFX I   ſſern   ßre        ſſern                                 # bessern > beßre 
+SFX I   n       e          ern                                   # auch: nähern > nähere 
+SFX I   n       t          e[lr]n                                # lächeln > lächelt 
+SFX I   n       t          [dt]en        
+SFX I   en      t          [^dimntsſ]en                           # schaff"|t 
+SFX I   en      t          [^sſ]ſen
+SFX I   en      t          eien                                  # schreien > schreit 
+SFX I   n       t          [^e]ien                               # knien > kniet 
+SFX I   n       t          chnen       
+SFX I   en      t          [^c]h[mn]en                           # nehmen > nehmt 
+SFX I   n       t          [^aäehilmnoöuür][mn]en    
+SFX I   en      t          [aäeilmnoöuür][mn]en      
+SFX I   ſſen    ßt         ſſen
+SFX I   n       e          un                                    # tun > ich tue 
+SFX I   n       t          un                                    # tun > er tut 
+
+
+SFX X Y 28
+SFX X   n       t          e[lr]n
+SFX X   n       t          [dtw]en
+SFX X   en      t          eien
+SFX X   n       t          [^e]ien
+SFX X   en      t          [^ditmnsſw]en
+SFX X   en      t          [^sſ]sſen
+SFX X   n       t          chnen
+SFX X   en      t          [^c]h[mn]en
+SFX X   n       t          [^aäehilmnoöuür][mn]en
+SFX X   en      t          [aäeilmnoöuür][mn]en
+SFX X   ſſen    ßt         ſſen
+SFX X   n       t          un
+SFX X   ſt      0          tſt
+SFX X   n       ſt         e[lr]n
+SFX X   n       ſt         [dtw]en
+SFX X   en      ſt         [^dimnßsſtwzx]en
+SFX X   en      ſt         eien
+SFX X   n       ſt         [^e]ien
+SFX X   n       ſt         chnen
+SFX X   en      ſt         [^c]h[mn]en
+SFX X   n       ſt         [^aäehilmnoöuür][mn]en
+SFX X   en      ſt         [aäeilmnoöuür][mn]en
+SFX X   n       ſt         un
+SFX X   n       ſt         [ßsſxz]en
+SFX X   n       ſt         ſſen
+SFX X   n       ſt         ſchen
+SFX X   t       ſt         [^sſz]t
+SFX X   t       eſt        zt
+
+
+# Vergangenheitsform für ich/er/sie/es
+SFX Y Y 44 
+SFX Y   n       te         e[lr]n                                # lächeln > lächelte 
+SFX Y   n       te         [dtw]en                               # arbeiten > arbeitete 
+SFX Y   en      te         [^dimnsſtw]en                           # leben > lebte 
+SFX Y   en      te         [^sſ]ſen								 # kreisen > kreiste
+SFX Y   ſſen    ßte        ſſen                                  # fassen > faßte
+SFX Y   en      te         eien                                  # freien > freite 
+SFX Y   n       te         [^e]ien                               # knien > kniete 
+SFX Y   n       te         chnen                                 # rechnen > rechnete 
+SFX Y   en      te         [^c]h[mn]en                           # ahnen > ahnte 
+SFX Y   n       te         [^aäehilmnoöuür][mn]en                # atmen > atmete 
+SFX Y   en      te         [aäeilmnoöuür][mn]en                  # lernen > lernte 
+SFX Y   n       teſt       e[lr]n                                # lächeln > lächeltest 
+SFX Y   n       teſt       [dtw]en                               # arbeiten > arbeitetest 
+SFX Y   en      teſt       [^dimnsſtw]en                           # leben > lebtest 
+SFX Y   en      teſt       [^sſ]ſen                           # kreisen > kreistest 
+SFX Y   ſſen    ßteſt      ſſen                                  # fassen > faßtest
+SFX Y   en      teſt       eien                                  # freien > freitest 
+SFX Y   n       teſt       [^e]ien                               # knien > knietest 
+SFX Y   n       teſt       chnen                                 # rechnen > rechnetest 
+SFX Y   en      teſt       [^c]h[mn]en                           # ahnen > ahntest 
+SFX Y   n       teſt       [^aäehilmnoöuür][mn]en                # atmen > atmetest 
+SFX Y   en      teſt       [aäeilmnoöuür][mn]en                  # lernen > lerntest 
+SFX Y   n       tet        e[lr]n                                # nähern > nähertet 
+SFX Y   n       tet        [dtw]en                               # rasten > rastetet 
+SFX Y   en      tet        [^dimnsſtw]en                          # leben > lebtet
+SFX Y   en      tet        [^sſ]ſen                          # rasen > rastet 
+SFX Y   ſſen    ßtet       ſſen                                  # fassen > faßtet
+SFX Y   en      tet        eien                                  # freien > freitet 
+SFX Y   n       tet        [^e]ien                               # knien > knietet 
+SFX Y   n       tet        chnen                                 # rechnen > rechnetet 
+SFX Y   en      tet        [^c]h[mn]en                           # ahnen > ahntet 
+SFX Y   n       tet        [^aäehilmnoöuür][mn]en                # atmen > atmetet 
+SFX Y   en      tet        [aäeilmnoöuür][mn]en                  # lernen > lerntet 
+SFX Y   n       ten        e[lr]n                                # lächeln > lächelten 
+SFX Y   n       ten        [dtw]en                               # arbeiten > arbeiteten 
+SFX Y   en      ten        [^dimnsſtw]en                           # leben > lebten 
+SFX Y   en      ten        [^sſ]ſen                               # rasen > rasten
+SFX Y   ſſen    ßten       ſſen                                  # fassen > faßten
+SFX Y   en      ten        eien                                  # freien > freiten 
+SFX Y   n       ten        [^e]ien                               # knien > knieten 
+SFX Y   n       ten        chnen                                 # rechnen > rechneten 
+SFX Y   en      ten        [^c]h[mn]en                           # ahnen > ahnten 
+SFX Y   n       ten        [^aäehilmnoöuür][mn]en                # atmen > atmeten 
+SFX Y   en      ten        [aäeilmnoöuür][mn]en                  # lernen > lernten 
+
+
+# Vergangenheitsformen unregelmäßiger Zeitwörter und Konjunktivformen aus der 1. Person: 
+SFX Z Y 16 
+SFX Z   0       ſt         [^hßsz]                               # wusste > wusstest 
+SFX Z   0       ſt         [^c]h                                 # floh > flohest 
+SFX Z   0       ſt         [^sſ]ch                                # wich > wichst 
+SFX Z   0       eſt        [dfkstz]                              # riet > rietest 
+SFX Z   0       eſt        ch                                    # wusch > wuschest 
+SFX Z   0       eſt        [au]ß                                 # aß > aßest #swiss-convert 
+SFX Z   0       eſt        ieß                                   # ließ > ließt #swiss-convert 
+SFX Z   ß       ſſeſt      [io]ß                                 # goß > gossest 
+SFX Z   0       t          [^dt]                                 # wüßte > wüsstet 
+SFX Z   0       et         [dt]                                  # riet > rietet 
+SFX Z   0       n          e                                     # hatte > hatten 
+SFX Z   0       en         ie                                    # auch: schrie > schrieen 
+SFX Z   0       en         [^eß]                                 # nahm > nahmen 
+SFX Z   0       en         [au]ß
+SFX Z   0       en         ieß
+SFX Z   ß       ſſen       [io]ß
+
+
+SFX O Y 27 
+SFX O   n       tes        e[lr]n                                # vererben > vererbtes 
+SFX O   n       tes        [dtw]en       
+SFX O   en      tes        [^dmntwsſ]en    
+SFX O   en      tes        [^sſ]ſen    
+SFX O   n       tes        chnen       
+SFX O   en      tes        [^c]h[mn]en 
+SFX O   n       tes        [^aäehilmnoöuür][mn]en    
+SFX O   en      tes        [aäeilmnoöuür][mn]en      
+SFX O   ſſen    ßtes       ſſen
+SFX O   n       ter        e[lr]n        
+SFX O   n       ter        [dtw]en       
+SFX O   en      ter        [^dmntwsſ]en    
+SFX O   en      ter        [^sſ]ſen    
+SFX O   n       ter        chnen       
+SFX O   en      ter        [^c]h[mn]en 
+SFX O   n       ter        [^aäehilmnoöuür][mn]en    
+SFX O   en      ter        [aäeilmnoöuür][mn]en      
+SFX O   ſſen    ßter       ſſen
+SFX O   n       tem        e[lr]n        
+SFX O   n       tem        [dtw]en       
+SFX O   en      tem        [^dmntws]en    
+SFX O   en      tem        [^s]sen    
+SFX O   n       tem        chnen       
+SFX O   en      tem        [^c]h[mn]en 
+SFX O   n       tem        [^aäehilmnoöuür][mn]en    
+SFX O   en      tem        [aäeilmnoöuür][mn]en      
+SFX O   ſſen    ßtem       ſſen
+
+# Häufige Fehler
+REP 34
+REP f ph
+REP ph f
+REP ß ſſ
+REP ſſ ß
+REP s ſſ
+REP ſſ s
+REP s ſ
+REP ſ s
+REP ss ſſ
+REP ss ß
+REP st ſt
+REP i ie
+REP ie i
+REP ee e
+REP o oh
+REP oh o
+REP a ah
+REP ah a
+REP e eh
+REP eh e
+REP ae ä
+REP oe ö
+REP ue ü
+REP Ae Ä
+REP Oe Ö
+REP Ue Ü
+REP d t
+REP t d
+REP th t
+REP t th
+REP r rh
+REP ch k
+REP k ch
+REP sodass ſo_daß
+#REP eee ee-E
+
+# Zeichen, die gerne verwechselt werden
+MAP 2
+MAP ß(ss)
+MAP ſs
+
+
+# this one will allow "-Eltern" - Hunspell 1.1.5 bug, but CHECKSHARPS obsoletes LANG de_DE
+#LANG de_DE
+CHECKSHARPS
+
+
+COMPOUNDBEGIN x
+COMPOUNDMIDDLE y
+COMPOUNDEND z
+
+# Wörter, die durch Kombinierungsregeln erschlossen werden, aber falsch sind
+FORBIDDENWORD d
+
+# Prefixes are allowed at the beginning of compounds,
+# suffixes are allowed at the end of compounds by default:
+# (prefix)?(root)+(affix)?
+# Affixes with COMPOUNDPERMITFLAG may be inside of compounds.
+COMPOUNDPERMITFLAG c
+
+ONLYINCOMPOUND o
+
+# Wort gibt es nicht so allein, sondern nur mit Affixen
+NEEDAFFIX h
+
+# forbid uppercase characters at compound word bounds
+# BUT I want to take care about it myself ;-)
+# CHECKCOMPOUNDCASE
+KEEPCASE w
+
+# Affixes  signed  with CIRCUMFIX flag may be on a word when this word also has a prefix with CIRCUMFIX flag and vice versa.
+# for decapitalizing nouns with fogemorphemes
+CIRCUMFIX f
+
+# this one would make a separate dict entry "Denkmalsschutz" invalidate the
+# compound of "Denkmal"+"schutz". We do not want this feature here...
+# CHECKCOMPOUNDREP
+
+# Wort akzeptieren, aber nicht vorschlagen (seltene, veraltete oder "unziemliche" Wörter)
+NOSUGGEST n
+
+# Was sonst noch so in Wörtern vorkommen kann ...
+WORDCHARS ſß-.'’
+
+# Setzen auf 2 wird benötigt für "öl" und "ei"
+COMPOUNDMIN 2
+
+# this ones are for Duden R36 (old orthography)
+CHECKCOMPOUNDPATTERN 2
+CHECKCOMPOUNDPATTERN eee ee
+CHECKCOMPOUNDPATTERN ooo oo
+# also need oo o
+
+# this one needs to be flagable to be used for old orthography
+CHECKCOMPOUNDTRIPLE
+SIMPLIFIEDTRIPLE
+
+
+PFX i Y 1
+PFX i 0 -/coyf .
+
+SFX j Y 3
+SFX j 0 0/xoc .
+SFX j 0 -/zocf .
+SFX j 0 -/cz .
+
+# Female forms for compound/Compound words:
+# attention: [^e][^n] does also filter out "...er" !
+SFX g Y 6
+SFX g 0  innen/xyoc [^n]
+SFX g en innen/xyoc en
+SFX g 0  innen/xyocf [^n]
+SFX g en innen/xyocf en
+SFX g 0  innen-/cz [^n]
+SFX g en innen-/cz en
+
+
+PFX k Y 2
+PFX k 0 -/coxf .
+PFX k 0 0/coy .
+
+SFX e Y 2
+SFX e 0 0/yoc .
+SFX e 0 -/zc .
+
+# for Uppercased end-words to prepend - and lowercase: (Tier/EPSm) (EX: Bettbezüge und *-laken*)
+# AND
+# for lowercased end-words to prepend - and re-uppercase : (tier/EPSozm) (EX: Arbeits*-Tier*)
+#PFX m A -a/co A
+#PFX m a -/ a
+PFX m Y 58
+PFX m A -a A
+PFX m B -b B
+PFX m C -c C
+PFX m D -d D
+PFX m E -e E
+PFX m F -f F
+PFX m G -g G
+PFX m H -h H
+PFX m I -i I
+PFX m J -j J
+PFX m K -k K
+PFX m L -l L
+PFX m M -m M
+PFX m N -n N
+PFX m O -o O
+PFX m P -p P
+PFX m Q -q Q
+PFX m R -r R
+PFX m S -ſ S
+PFX m T -t T
+PFX m U -u U
+PFX m V -v V
+PFX m W -w W
+PFX m X -x X
+PFX m Y -y Y
+PFX m Z -z Z
+PFX m Ä -ä Ä
+PFX m Ö -ö Ö
+PFX m Ü -ü Ü
+PFX m a -A/co a
+PFX m b -B/co b
+PFX m c -C/co c
+PFX m d -D/co d
+PFX m e -E/co e
+PFX m f -F/co f
+PFX m g -G/co g
+PFX m h -H/co h
+PFX m i -I/co i
+PFX m j -J/co j
+PFX m k -K/co k
+PFX m l -L/co l
+PFX m m -M/co m
+PFX m n -N/co n
+PFX m o -O/co o
+PFX m p -P/co p
+PFX m q -Q/co q
+PFX m r -R/co r
+PFX m ſ -S/co ſ
+PFX m t -T/co t
+PFX m u -U/co u
+PFX m v -V/co v
+PFX m w -W/co w
+PFX m x -X/co x
+PFX m y -Y/co y
+PFX m z -Z/co z
+PFX m ä -Ä/co ä
+PFX m ö -Ö/co ö
+PFX m ü -Ü/co ü
+
+
+# Decapitalizing: (not used ATM... )
+# /co(f) : compound permit, in coumpount only, (decapitalizing with fogemorphemes)
+#PFX l Y 29
+#PFX l A a/co A
+#PFX l Ä ä/co Ä
+#PFX l B b/co B
+#PFX l C c/co C
+#PFX l D d/co D
+#PFX l E e/co E
+#PFX l F f/co F
+#PFX l G g/co G
+#PFX l H h/co H
+#PFX l I i/co I
+#PFX l J j/co J
+#PFX l K k/co K
+#PFX l L l/co L
+#PFX l M m/co M
+#PFX l N n/co N
+#PFX l O o/co O
+#PFX l Ö ö/co Ö
+#PFX l P p/co P
+#PFX l Q q/co Q
+#PFX l R r/co R
+#PFX l S s/co S
+#PFX l T t/co T
+#PFX l U u/co U
+#PFX l Ü ü/co Ü
+#PFX l V v/co V
+#PFX l W w/co W
+#PFX l X x/co X
+#PFX l Y y/co Y
+#PFX l Z z/co Z
+
+# private hunspell flags:
+# --x : not for capmain (rare words)
+
+# With "BREAK -" some wrong forms are accepted but that is needed for US-Wirtschaft etc.
+# So enabling this is the lesser evil. No perfect solution found so far...
+BREAK 2
+BREAK -
+BREAK .
+
+
+# Damit werden auch Ligaturen, typographische Auslassungszeichen usw. aufgelöst
+ICONV 7
+ICONV ’ '
+ICONV ﬃ ffi
+ICONV ﬄ ffl
+ICONV ﬀ ff
+ICONV ﬁ fi
+ICONV ﬂ fl
+ICONV μ µ
+
+
+# Damit können typographische Auslassungszeichen bei Wortersetzungen eingefügt werden
+OCONV 1
+OCONV ' ’
+
+
+# Kennzeichnung für "Austriazismen"
+# Viele davon werden auch in Bayern oder sogar in ganz Süddeutschland benutzt.
+# Derzeit keine besondere Behandlung.
+#SFX ö 0
+
