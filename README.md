@@ -1,4 +1,4 @@
-# de_DE_oldspell
+# Deutsche Rechtschreibung
 Dateien für die traditionelle deutsche Rechtschreibung.
 
 Dieses Repository hält Dateien für ein "Spellchecking", also für die Rechtschreibprüfung, in der traditionellen
